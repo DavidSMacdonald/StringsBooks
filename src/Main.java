@@ -10,7 +10,11 @@ public class Main {
     }
 
     public String negatives(String n) {
-
+        String s = "";
+        s = n.replace("0","x");
+        s = n.replace("1","0");
+        s =n.replace("X","1");
+        return s;
     }
 
     public static void main(String[] args) {
@@ -18,5 +22,6 @@ public class Main {
         System.out.println(m.scroll("David"));
         System.out.println(m.convertName("Macdonald, David"));
         System.out.println(m.convertName("van Arnam, Steven"));
+        System.out.println(m.negatives("0001000"));
     }
 }
